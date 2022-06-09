@@ -60,9 +60,9 @@ out.write('Cantidad de objetos %g, cantidad de cajas %g\n' % (nbObjetos, nbCajas
 if m.num_solutions:
     out.write('distribution found with cost %g\n'
               % (-m.objective_value))
-    for j in range(nbCajas):
-        out.write('Caja %g' % (j+1))
-        for i in range(nbObjetos):
-            if w[i][j].x >= 0.99:
-                out.write(' objeto %g' % (i+1))
-        out.write('\n')
+    # for j in range(nbCajas):
+    #     out.write('Caja %g' % (j+1))
+    #     for i in range(nbObjetos):
+    #         if w[i][j].x >= 0.99:
+    #             out.write(' objeto %g' % (i+1))
+    #     out.write('\n')
