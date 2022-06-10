@@ -1,3 +1,11 @@
+# ---------------------------------------------------------------------------
+# File: tp6.py
+# Date: Junio 2022
+# Author: Nerea Gallego Sanchez
+# ---------------------------------------------------------------------------
+# Resuelve el problema de la mudanza planteado en el trabajo tp6 de la 
+# Asignatura de Algoritmia Básica en la Universidad de Zaragoza
+# ---------------------------------------------------------------------------
 from multiprocessing.dummy import Array
 from telnetlib import BINARY
 from itertools import product
