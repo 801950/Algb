@@ -9,6 +9,7 @@ import numpy as np
 from inputdata import read_dat_file
 
 if len(sys.argv) == 2:
+    # se leen los datos de entrada
     x, y, c, P, V = read_dat_file(sys.argv[1])
     if len(x) != len(y):
         out.write('el vector de pesos de los objetos y el vector de volumenes de los objetos deben tener el mismo tamaño')
@@ -60,9 +61,9 @@ out.write('Cantidad de objetos %g, cantidad de cajas %g\n' % (nbObjetos, nbCajas
 if m.num_solutions:
     out.write('distribution found with cost %g\n'
               % (-m.objective_value))
-    # for j in range(nbCajas):
-    #     out.write('Caja %g' % (j+1))
-    #     for i in range(nbObjetos):
-    #         if w[i][j].x >= 0.99:
-    #             out.write(' objeto %g' % (i+1))
-    #     out.write('\n')
+    for j in range(nbCajas):
+        out.write('Caja %g' % (j+1))
+        for i in range(nbObjetos):
+            if w[i][j].x >= 0.99:
+                out.write(' objeto %g' % (i+1))
+        out.write('\n')
