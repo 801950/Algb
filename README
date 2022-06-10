@@ -1,12 +1,12 @@
 # Instrucciones de instalación, compilación y uso
 
     Para ejecutar el programa, es necesario tener instadado python3:
-    (https://www.python.org/downloads/)
+    https://www.python.org/downloads/
 
     A continaución es necesario obtener la herramienta pip (si no se ha obtenido ya).
     Mediante pip, se instala la herramienta de programación lineal utilizada (MIP):
 
-    (https://python-mip.readthedocs.io/en/latest/install.html)
+    https://python-mip.readthedocs.io/en/latest/install.html
 
     Una vez se ha instalado python3 y la herramienta mip, se puede ejecutar el programa.
 
